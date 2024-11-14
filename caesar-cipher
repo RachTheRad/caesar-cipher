@@ -1,0 +1,39 @@
+cypher = {
+    "a" : "e",
+    "b" : "f",
+    "c" : "g",
+    "d" : "h",
+    "e" : "i",
+    "f" : "j",
+    "g" : "k",
+    "h" : "l",
+    "i" : "m",
+    "j" : "n",
+    "k" : "o",
+    "l" : "p",
+    "m" : "q",
+    "n" : "r",
+    "o" : "s",
+    "p" : "t",
+    "q" : "u",
+    "r" : "v",
+    "s" : "w",
+    "t" : "x",
+    "u" : "y",
+    "v" : "z",
+    "w" : "a",
+    "x" : "b",
+    "y" : "c",
+    "z" : "e"
+}
+
+phrase = input("What phrase do you want to encrypt?")
+phrase = phrase.lower()
+
+encrypt = ""
+for char in phrase:
+    if char in cypher:
+           char = cypher[char]
+    encrypt += char
+
+print(encrypt)
